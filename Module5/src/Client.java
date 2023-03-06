@@ -7,15 +7,12 @@ import java.time.LocalDateTime;
 
 public class Client
 {
-	// initialize socket and input output streams
 	private Socket socket		 = null;
 	private DataInputStream input = null;
 	private DataOutputStream out	 = null;
 
-	// constructor to put ip address and port
 	public Client(String address, int port)
 	{
-		// establish a connection
 		try
 		{
 			socket = new Socket(address, port);
